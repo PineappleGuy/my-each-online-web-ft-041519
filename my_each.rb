@@ -1,11 +1,11 @@
 def my_each(array)
   if block_given?
-
-    while x < ?
-      yield
-
+    i = 0
+    while i < array.length
+      yield(array[i])
+      i += 1
   else
     "No block was given"
   end
-return SOMETHING?
+return array
 end
