@@ -3,9 +3,12 @@ def my_each(array)
     i = 0
     while i < array.length
       yield(array[i])
-      i += 1
+      i = i + 1
+    end
+    array
+    
   else
     "No block was given"
   end
-return array
+return
 end
